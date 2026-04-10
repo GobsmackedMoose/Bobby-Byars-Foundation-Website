@@ -14,4 +14,6 @@ import { ProgramsPopoverComponent } from './programs-popover/programs-popover.co
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+
+}
