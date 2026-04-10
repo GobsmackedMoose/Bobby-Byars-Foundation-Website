@@ -1,17 +1,115 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>project-work</ion-title>
+    <ion-title>Youth Mentorship Program</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">project-work</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <p>
-    This is the ProjectWORK page
-  </p>
+  <!-- =============================================
+       Section 1: Hero / Description
+       ============================================= -->
+  <section class="hero-section">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <!-- Left column: Program name + description -->
+        <ion-col size="12" size-md="6" class="hero-text-col">
+          <h1 class="program-title">Youth Mentorship Program</h1>
+          <p class="program-description">
+            Our Youth Mentorship Program pairs at-risk young people with caring, trained adult mentors
+            who guide them through life's challenges. Together, they build trust, develop skills, and
+            work toward a brighter future — one connection at a time.
+          </p>
+          <p class="program-description">
+            Since our founding, this program has served hundreds of youth in our community, fostering
+            confidence, academic growth, and lasting relationships that extend well beyond the program itself.
+          </p>
+        </ion-col>
+
+        <!-- Right column: Program photo -->
+        <ion-col size="12" size-md="6" class="hero-image-col">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Two mentors and a young participant smiling together at a community event"
+            class="program-photo"
+          />
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 2: Testimony
+       ============================================= -->
+  <section class="testimony-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <blockquote class="testimony-block">
+            <p class="testimony-text">
+              Before joining this program, I felt completely alone and didn't believe anyone truly cared
+              about my future. My mentor showed me that I was wrong. She sat with me through every hard
+              moment, celebrated every small win, and never gave up on me — even when I wanted to give
+              up on myself. Because of this program, I graduated high school and enrolled in community
+              college. I genuinely don't know where I'd be without it.
+            </p>
+            <footer class="testimony-attribution">— Maria S.</footer>
+          </blockquote>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 3: Eligibility & How to Join
+       ============================================= -->
+  <section class="eligibility-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+
+          <hr class="section-divider" aria-hidden="true" />
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">Who Is Eligible</h3>
+            <p>
+              This program is open to youth between the ages of 12 and 18 who are experiencing
+              academic, social, or family challenges. Residents of our three-county service area
+              with a demonstrated need for additional support are encouraged to apply.
+            </p>
+          </div>
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">How to Join</h3>
+            <p>
+              Families can apply by completing a short intake form available on our website or
+              by visiting our office during regular business hours. Once your application is
+              received, a program coordinator will reach out within five business days to schedule
+              an introductory meeting and begin the matching process.
+            </p>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 4: Call to Action Footer
+       ============================================= -->
+  <section class="cta-section">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" class="cta-primary">Apply Now</ion-button>
+        </ion-col>
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" fill="outline" class="cta-outline">Contact Us</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
 </ion-content>
