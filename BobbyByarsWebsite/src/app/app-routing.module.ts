@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'events',
     loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
   },
+  {
+    path: 'project-work',
+    loadChildren: () => import('./project-work/project-work.module').then( m => m.ProjectWorkPageModule)
+  },
+  {
+    path: 'scholarships',
+    loadChildren: () => import('./scholarships/scholarships.module').then( m => m.ScholarshipsPageModule)
+  },
+  {
+    path: 'frances-project',
+    loadChildren: () => import('./frances-project/frances-project.module').then( m => m.FrancesProjectPageModule)
+  },
 ];
 
 @NgModule({
