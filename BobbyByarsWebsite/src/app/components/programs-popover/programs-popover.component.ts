@@ -14,6 +14,11 @@ export class ProgramsPopoverComponent  implements OnInit {
 
   ngOnInit() {}
 
+  buttonClicked(url: string) {
+    this.popoverCtrl.dismiss();
+    this.navigate(url);
+  }
+
   navigate(url: string) {
     this.router.navigateByUrl(url)
   }
