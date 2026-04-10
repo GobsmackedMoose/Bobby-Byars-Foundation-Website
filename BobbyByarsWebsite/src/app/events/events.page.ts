@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-events',
   templateUrl: './events.page.html',
   styleUrls: ['./events.page.scss'],
+  standalone: false
 })
 export class EventsPage implements OnInit {
 
