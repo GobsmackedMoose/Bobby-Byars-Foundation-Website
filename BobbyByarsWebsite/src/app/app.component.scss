@@ -5,12 +5,39 @@
 
 .logo-button{
     cursor: pointer;
-    height: 7.5%;
-    width: 7.5%;
+    height: 100;
+    width: 100%;
     --padding-start: 0;
     --padding-end: 0;
-
+    flex-grow: 0;
     &::part(native) {
       padding: 0;
     }
+}
+
+.menu-button{
+    --padding-start: 1%;
+    --padding-end: 1%;
+    width: 35%;
+    align-self: center;
+    flex: 1;
+    &::part(native) {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+}
+
+.donate-button{
+    --padding-start: 1%;
+    --padding-end: 1%;
+    width: 35%;
+    flex: 0; 
+    border-radius: 5px;
+
+    align-items: right;
+    justify-content: right; 
+    float: right;
+
 }
