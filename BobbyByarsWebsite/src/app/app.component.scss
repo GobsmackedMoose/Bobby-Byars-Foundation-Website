@@ -1,16 +1,46 @@
-.logo{
+.logo {
     height: 100%;
     width: 100%;
 }
 
-.logo-button{
+.logo-col {
+    display: flex;
+    align-items: center;
+}
+
+.logo-button {
     cursor: pointer;
-    height: 7.5%;
-    width: 7.5%;
+    height: 100%;
+    width: 100%;
     --padding-start: 0;
     --padding-end: 0;
-
     &::part(native) {
-      padding: 0;
+        padding: 0;
     }
+}
+
+.nav-col {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.menu-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    &::part(native) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.action-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.donate-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
 }
