@@ -1,7 +1,5 @@
 {
-  "name": "BobbyByarsWebsite",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "bobby?",
+  "integrations": {},
   "type": "angular"
 }
