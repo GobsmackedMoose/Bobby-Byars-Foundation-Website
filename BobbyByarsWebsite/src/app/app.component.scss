@@ -1,10 +1,16 @@
 .logo{
-    height: 15%;
-    width: 15%;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-button{
-  
     cursor: pointer;
-    
+    height: 7.5%;
+    width: 7.5%;
+    --padding-start: 0;
+    --padding-end: 0;
+
+    &::part(native) {
+      padding: 0;
+    }
 }
