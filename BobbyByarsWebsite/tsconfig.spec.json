@@ -6,6 +6,7 @@
     "types": [
       "jasmine"
     ],
+    "declaration": true,
     "composite": true,
   },
   "files": [
