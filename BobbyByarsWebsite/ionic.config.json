@@ -1,5 +1,8 @@
 {
-  "name": "bobby?",
-  "integrations": {},
+  "name": "BobbyByarsWebsite",
+  "integrations": {
+    "capacitor": {}
+  },
+
   "type": "angular"
 }

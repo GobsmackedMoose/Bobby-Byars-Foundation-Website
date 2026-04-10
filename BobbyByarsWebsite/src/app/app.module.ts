@@ -6,7 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProgramsPopoverComponent } from './programs-popover/programs-popover.component';
+import { ProgramsPopoverComponent } from './components/programs-popover/programs-popover.component';
 
 @NgModule({
   declarations: [AppComponent, ProgramsPopoverComponent],
@@ -14,4 +14,6 @@ import { ProgramsPopoverComponent } from './programs-popover/programs-popover.co
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+
+}

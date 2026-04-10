@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-import { ProgramsPopoverComponent } from './programs-popover/programs-popover.component';
+import { ProgramsPopoverComponent } from './components/programs-popover/programs-popover.component';
 
 @Component({
   selector: 'app-root',

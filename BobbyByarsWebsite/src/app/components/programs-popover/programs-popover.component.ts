@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-programs-popover',
@@ -9,8 +10,17 @@ import { PopoverController } from '@ionic/angular';
 })
 export class ProgramsPopoverComponent  implements OnInit {
 
-  constructor(private popoverCtrl: PopoverController) { }
+  constructor(private popoverCtrl: PopoverController, private router: Router) { }
 
   ngOnInit() {}
+
+  buttonClicked(url: string) {
+    this.popoverCtrl.dismiss();
+    this.navigate(url);
+  }
+
+  navigate(url: string) {
+    this.router.navigateByUrl(url)
+  }
 
 }
