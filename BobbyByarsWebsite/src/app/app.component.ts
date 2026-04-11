@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
 import { ProgramsPopoverComponent } from './components/programs-popover/programs-popover.component';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
