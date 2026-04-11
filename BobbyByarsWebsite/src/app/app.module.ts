@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
+import { Router, RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
@@ -15,5 +15,13 @@ import { ProgramsPopoverComponent } from './components/programs-popover/programs
   bootstrap: [AppComponent],
 })
 export class AppModule {
+   constructor(
+    private router: Router,
+  ) { }
 
+
+navigate(nextPage: string) {
+    this.router.navigateByUrl(nextPage);
+
+  }
 }

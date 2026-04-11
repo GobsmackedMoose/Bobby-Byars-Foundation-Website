@@ -1,10 +1,109 @@
 
-
 <ion-content [fullscreen]="true">
-  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>This is the home page/p>
-  </div>
+  <!-- HERO -->
+  <section id="hero">
+    <img src="assets/pic1.png" alt="Bobby Byars" class="hero-bg-img" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">IN HIS HONOR</p>
+      <h1>The Bobby Byars Foundation</h1>
+      <p class="hero-sub">Honoring a legacy of service, compassion, and community — building the next generation of leaders.</p>
+      <div class="hero-ctas">
+        <ion-button shape="round" class="cta-gold">Learn Our Story</ion-button>
+        <ion-button shape="round" fill="outline" class="cta-outline">Get Involved</ion-button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission">
+    <div class="section-inner">
+      <div class="gold-rule"></div>
+      <h2>Our Mission</h2>
+      <p>The Bobby Byars Foundation exists to carry forward the values Bobby lived every day — a belief that every
+        person deserves opportunity, dignity, and community. Through scholarships, outreach programs, and a commitment
+        to service, we work to honor his memory by changing lives.</p>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section id="pillars">
+    <h2 class="pillars-heading">What We Stand For</h2>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size="12" size-lg="4">
+          <ion-card> 
+            <ion-title> Scholarships</ion-title>
+            <ion-text> We provide scholarships to deserving students who embody Bobby's spirit of determination, kindness, and leadership. By investing in education, we help create a brighter future for individuals and communities alike.</ion-text>
+            <ion-button fill="clear" class="card-link">Learn More →</ion-button>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-lg="4">
+          <ion-card>
+            <ion-title>Community Outreach</ion-title>
+            <div> 
+              <ion-text>From food drives to neighborhood support programs, we show up for the people and places Bobby loved.
+              </ion-text>
+            </div>
+            <div> <ion-button fill="clear" class="card-link">Learn More →</ion-button> </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-lg="4">
+          <ion-card>
+            <ion-title>Bobby's Legacy</ion-title>
+            <ion-text>Bobby Byars touched countless lives. This foundation is a living tribute — a promise that his spirit
+              of generosity, courage, and love will never be forgotten.</ion-text>
+            <ion-button fill="clear" class="card-link">Learn More →</ion-button>
+          </ion-card>
+        </ion-col>
+
+                
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- ABOUT BOBBY -->
+  <section id="about-bobby">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <ion-col size="12" size-md="6">
+          <img src="assets/pic1.png" alt="Bobby Byars" class="about-photo" loading="lazy" />
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <div class="about-text">
+            <p class="eyebrow">IN MEMORIAM</p>
+            <h2>Who Was Bobby Byars?</h2>
+            <p>Write 2–3 paragraphs here about Bobby — his life, his character, what made him special, and why this
+              foundation was created in his name.</p>
+            <p>This is the emotional core of the page. Speak personally, warmly, and with pride.</p>
+            <blockquote class="pull-quote">A memorable quote from or about Bobby.</blockquote>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="get-involved">
+    <div class="section-inner">
+      <div class="gold-rule"></div>
+      <h2>Join Us in His Honor</h2>
+      <p>There are many ways to carry Bobby's legacy forward. Whether you donate, volunteer, or spread the word —
+        every action matters.</p>
+      <div class="cta-group">
+        <ion-button shape="round" class="cta-gold">Donate Now</ion-button>
+        <ion-button shape="round" fill="outline" class="cta-outline">Volunteer</ion-button>
+        <ion-button shape="round" fill="outline" class="cta-outline">Nominate a Scholar</ion-button>
+      </div>
+    </div>
+  </section>
+
 </ion-content>
