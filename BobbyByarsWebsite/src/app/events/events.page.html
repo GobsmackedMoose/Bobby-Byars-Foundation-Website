@@ -20,55 +20,36 @@
   <!-- ── NEWS GRID ──────────────────────────────────────────────────── -->
   <ion-grid class="news-grid">
     <ion-row>
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card class="news-card" *ngFor="let article of allArticles[0:5]">
-          <img
-            src="https://placehold.co/600x400/F7F4FF/713AAF"
-            alt="Community members receiving grant funds at a foundation ceremony"
-            class="card-img"
-          />
-          <ion-card-header>
-            <ion-card-subtitle>
-              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-              March 5, 2025
-            </ion-card-subtitle>
-            <ion-card-title>Foundation Launches New Community Grant Program</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-button expand="block" href="#" (click) = "navigate('/news-article')">
-              Read More
-              <ion-icon slot="end" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
 
-
-
-
-
-      <!-- Card 1 
-      <ion-col size="12" size-md="6" size-lg="4">
+      <ion-col size="12" size-md="6" size-lg="4" *ngFor="let article of allArticles | slice:0:5">
         <ion-card class="news-card">
-          <img
-            src="https://placehold.co/600x400/F7F4FF/713AAF"
-            alt="Community members receiving grant funds at a foundation ceremony"
-            class="card-img"
-          />
+          <div class="card-img-wrapper">
+            <img
+              src="{{article.imageUrl}}"
+              alt="{{article.imageAltText}}"
+              class="card-img"
+              onerror="this.closest('.card-img-wrapper').classList.add('img-error')"
+            />
+            <div class="card-img-fallback" aria-hidden="true">
+              <ion-icon name="image-outline"></ion-icon>
+              <span>No image available</span>
+            </div>
+          </div>
           <ion-card-header>
             <ion-card-subtitle>
               <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-              March 5, 2025
+              {{article.date}}
             </ion-card-subtitle>
-            <ion-card-title>Foundation Launches New Community Grant Program</ion-card-title>
+            <ion-card-title>{{article.title}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-button expand="block" href="#">
+            <ion-button expand="block" (click)="goToArticle('/news-article')">
               Read More
               <ion-icon slot="end" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </ion-button>
           </ion-card-content>
         </ion-card>
-      </ion-col> -->
+      </ion-col>
 
     </ion-row>
   </ion-grid>

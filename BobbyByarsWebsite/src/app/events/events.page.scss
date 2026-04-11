@@ -44,16 +44,57 @@
 // ─── NEWS CARD ────────────────────────────────────────────────────────────────
 
 .news-card {
-  // Keep global ion-card styles; add image support and title clamp
+  // ── Image wrapper ──────────────────────────────────────────────────────────
+  .card-img-wrapper {
+    position: relative;
+    height: 200px;
+    background: #f0e8f8;
+    overflow: hidden;
+  }
+
   .card-img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     display: block;
   }
 
+  // ── Fallback shown when image fails to load ────────────────────────────────
+  .card-img-fallback {
+    display: none;
+  }
+
+  .card-img-wrapper.img-error {
+    .card-img {
+      display: none;
+    }
+
+    .card-img-fallback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 8px;
+      color: var(--bbf-purple, #713aaf);
+
+      ion-icon {
+        font-size: 2rem;
+        opacity: 0.5;
+      }
+
+      span {
+        font-size: 0.8rem;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  // ── Card body ──────────────────────────────────────────────────────────────
   ion-card-header {
     flex: 1;
+    padding-top: 10px;
+    padding-bottom: 4px;
   }
 
   ion-card-subtitle {
@@ -72,11 +113,13 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.4;
-    margin-top: 8px;
+    margin-top: 6px;
+    font-size: 1rem;
   }
 
   ion-card-content {
     margin-top: auto;
+    padding-top: 4px;
   }
 }
 
