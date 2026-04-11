@@ -1,46 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>News &amp; Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
 
-  <!-- Page Header -->
-  <div class="news-header">
-    <h1>News &amp; Events</h1>
-    <p>Stay up to date with the latest from our foundation.</p>
-  </div>
-
-  <!-- News Grid -->
-  <div class="news-grid">
-
-    <!-- Card 1 -->
-    <div class="news-card">
-      <div class="card-image">
-        <img src="https://placehold.co/600x400/e8f5ec/2d7d46" alt="Community members receiving grant funds at a foundation ceremony" />
-      </div>
-      <div class="card-body">
-        <h3 class="card-title">Foundation Launches New Community Grant Program</h3>
-        <div class="card-footer">
-          <span class="card-date">March 5, 2025</span>
-          <a class="card-btn" href="#">Read More →</a>
-        </div>
-      </div>
+  <!-- ── PAGE HEADER ─────────────────────────────────────────────────── -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <div class="header-rule"></div>
+      <ion-text>
+        <h1>News &amp; Events</h1>
+        <p>Stay up to date with the latest from our foundation.</p>
+      </ion-text>
     </div>
+  </section>
 
+  <!-- ── NEWS GRID ──────────────────────────────────────────────────── -->
+  <ion-grid class="news-grid">
+    <ion-row>
 
-    <!--
-    
-    <div class="news-card">
-      <div class="card-image">
-        <img src="https://placehold.co/600x400/e8f5ec/2d7d46" alt="Guests at the annual gala celebrating a record fundraising year" />
-      </div>
-      <div class="card-body">
-        <h3 class="card-title">Annual Gala Raises Record $250,000 for Local Families</h3>
-        <div class="card-footer">
-          <span class="card-date">February 18, 2025</span>
-          <a class="card-btn" href="#">Read More →</a>
-        </div>
-      </div>
-    </div> -->
+      <ion-col size="12" size-md="6" size-lg="4" *ngFor="let article of allArticles | slice:0:5">
+        <ion-card class="news-card">
+          <div class="card-img-wrapper">
+            <img
+              src="{{article.imageUrl}}"
+              alt="{{article.imageAltText}}"
+              class="card-img"
+              onerror="this.closest('.card-img-wrapper').classList.add('img-error')"
+            />
+            <div class="card-img-fallback" aria-hidden="true">
+              <ion-icon name="image-outline"></ion-icon>
+              <span>No image available</span>
+            </div>
+          </div>
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+              {{article.date}}
+            </ion-card-subtitle>
+            <ion-card-title>{{article.title}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button expand="block" (click)="goToArticle('/news-article')">
+              Read More
+              <ion-icon slot="end" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-    
-
-  </div>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

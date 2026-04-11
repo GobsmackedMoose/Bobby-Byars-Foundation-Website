@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../models/article';
+//import { Firebase }
 
 @Component({
   selector: 'app-news-article',
@@ -8,7 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsArticlePage implements OnInit {
 
-  constructor() { }
+  testArticle: Article = new Article(
+    "Test Article Title",
+    "Test Article Subtitle",
+    "01/01/2024",
+    "This is the content of the test article. It is meant to demonstrate how an article will be displayed on the news article page.",
+    "https://via.placeholder.com/150",
+    "Placeholder image for test article"
+  );
+
+  testArticle2: Article = new Article(
+    "Test Article number 2",
+    "Test Article Subtitle number 2",
+    "01/01/2026",
+    "This is the content of the second test article. It is meant to demonstrate how an article will be displayed on the news article page.",
+    "https://via.placeholder.com/150",
+    "Placeholder image for second test article"
+  );
+
+  constructor() {
+    
+  }
 
   ngOnInit() {
   }
