@@ -240,11 +240,12 @@
 // ─── GET INVOLVED ─────────────────────────────────────────────────────────────
 
 #get-involved {
-  background: var(--bbf-purple);
+  background: #1a0a2e;
   padding: 80px 24px;
 
   .gold-rule {
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--bbf-accent);
+    opacity: 0.6;
   }
 
   .section-inner {
@@ -263,7 +264,7 @@
   p {
     font-size: 16px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.7);
     margin: 0 0 36px;
   }
 
@@ -272,6 +273,25 @@
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  ion-button.cta-gold {
+    --background:       var(--bbf-purple);
+    --background-hover: var(--bbf-accent);
+    --color:            #fff;
+    --border-radius:    50px;
+    --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.4);
+    font-weight:        700;
+    letter-spacing:     0.05em;
+  }
+
+  ion-button.cta-outline {
+    --color:            rgba(255, 255, 255, 0.85);
+    --border-color:     rgba(255, 255, 255, 0.35);
+    --background-hover: rgba(255, 255, 255, 0.06);
+    --border-radius:    50px;
+    font-weight:        600;
+    letter-spacing:     0.05em;
   }
 }
 
