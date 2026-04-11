@@ -1,16 +1,104 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>scholarships</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">scholarships</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <p>
-    This is the Scholarships page
-  </p>
+<ion-content>
+
+  <!-- =============================================
+       Section 1: Hero / Description
+       ============================================= -->
+  <section class="hero-section">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <!-- Left column: Program name + description -->
+        <ion-col size="12" size-md="6" class="hero-text-col">
+          <h1 class="program-title">Project WORK</h1>
+          <p class="program-description">
+            Bobby Byars offers an annual monetary scholarship awards to deserving, 
+            college-bound students or individuals pursuing a trade.
+          </p>
+          <p class="program-description">
+            More desriptions of how the process works
+          </p>
+        </ion-col>
+
+        <!-- Right column: Program photo -->
+        <ion-col size="12" size-md="6" class="hero-image-col">
+          <img
+            src="https://placehold.co/600x400"
+            alt="blank photo"
+            class="program-photo"
+          />
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 2: Testimony
+       ============================================= -->
+  <section class="testimony-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <blockquote class="testimony-block">
+            <p class="testimony-text">
+              get a quote or a story to give people an idea of how the scholarship program 
+              has impacted the lives of students and families in the community.
+            </p>
+            <footer class="testimony-attribution">— Jane D.</footer>
+          </blockquote>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 3: Eligibility & How to Join
+       ============================================= -->
+  <section class="eligibility-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+
+          <hr class="section-divider" aria-hidden="true" />
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">Who Is Eligible</h3>
+            <p>
+              Our scholarship program is open to high school seniors and current students in the trades
+              who demonstrate academic excellence, leadership potential, and a commitment to 
+              community service. Applicants must be residents of our service area and plan to 
+              pursue the trades in the upcoming academic year.
+            </p>
+          </div>
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">How to Join</h3>
+            <p>
+              Explain exactly how to apply for the scholarship.
+            </p>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 4: Call to Action Footer
+       ============================================= -->
+  <section class="cta-section">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" class="cta-primary">Apply Now</ion-button>
+        </ion-col>
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" fill="outline" class="cta-outline">Contact Us</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
 </ion-content>
+
