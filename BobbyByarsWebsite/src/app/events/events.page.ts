@@ -13,12 +13,12 @@ export class EventsPage implements OnInit {
 
   allArticles: Article[] = [
     new Article(
-    "Test Article Title",
-    "Test Article Subtitle",
-    "01/01/2024",
-    "This is the content of the test article. It is meant to demonstrate how an article will be displayed on the news article page.",
-    "https://via.placeholder.com/150",
-    "Placeholder image for test article"
+      "Test Article Title",
+      "Test Article Subtitle",
+      "01/01/2024",
+      "This is the content of the test article. It is meant to demonstrate how an article will be displayed on the news article page.",
+      "https://via.placeholder.com/150",
+      "Placeholder image for test article"
     ),
     new Article(
       "Test Article number 2",
