@@ -9,6 +9,110 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+@use "theme/variables";
+
+// ─── GLOBAL BUTTON STYLES ─────────────────────────────────────────────────────
+
+ion-button {
+  --background:       var(--bbf-purple);
+  --background-hover: var(--bbf-gold-light);
+  --color:            var(--bbf-white);
+  --border-radius:    50px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+ion-button:has(img) {
+  --background:       transparent;
+  --background-hover: transparent;
+  --box-shadow:       none;
+}
+
+ion-button[fill="outline"] {
+  --background:       transparent;
+  --background-hover: rgba(255, 255, 255, 0.08);
+  --color:            var(--bbf-purple);
+  --border-width:     1px;
+  --border-style:     solid;
+}
+
+ion-button[fill="clear"] {
+  --background:       transparent;
+  --background-hover: rgba(113, 58, 175, 0.08);
+  --color:            var(--bbf-purple);
+  --box-shadow:       none;
+}
+
+ion-button.cta-outline {
+  --border-color: var(--bbf-white);
+  --color:        var(--bbf-white);
+}
+
+// ─── GLOBAL CARD STYLES ───────────────────────────────────────────────────────
+
+ion-card {
+  --background:  var(--bbf-cream);
+  --color:       var(--bbf-charcoal);
+  border-radius: 16px;
+  box-shadow:    0 4px 20px rgba(0, 0, 0, 0.12);
+  margin:        0;
+  height:        100%;
+  display:       flex;
+  flex-direction: column;
+  border-top:    4px solid var(--bbf-purple);
+  transition:    transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform:  translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+ion-card-header {
+  padding: 24px 20px 8px;
+}
+
+ion-card-title {
+  color:       rgb(37, 4, 80);
+  font-size:   1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+ion-card-subtitle {
+  color:          var(--bbf-purple);
+  font-size:      0.75rem;
+  font-weight:    600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top:     4px;
+}
+
+ion-card-content {
+  font-size:   0.95rem;
+  line-height: 1.7;
+  padding:     8px 20px 16px;
+  flex:        1;
+  display:     flex;
+  flex-direction: column;
+
+  p {
+    flex: 1;
+    margin: 0 0 16px;
+    color: var(--bbf-charcoal);
+  }
+
+  ion-button.card-link {
+    --padding-start:  0;
+    font-size:        0.875rem;
+    font-weight:      700;
+    letter-spacing:   0.05em;
+    align-self:       flex-start;
+    margin-top:       auto;
+  }
+}
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
