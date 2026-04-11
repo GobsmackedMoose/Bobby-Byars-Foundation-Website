@@ -12,13 +12,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   constructor(private popoverController: PopoverController, private router: Router) {}
-<<<<<<< HEAD
-=======
-
-  navigate(path: string) {
-    this.router.navigate([path]);
-  }
->>>>>>> 57439d2c (end of today)
   
   
   async openProgramsMenu(event: Event) {
