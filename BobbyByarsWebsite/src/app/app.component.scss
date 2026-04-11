@@ -20,25 +20,30 @@
     }
 }
 
-.nav-col {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-}
-
-.menu-button {
-    --padding-start: 8px;
-    --padding-end: 8px;
+.menu-button{
+    --padding-start: 1%;
+    --padding-end: 1%;
+    width: 35%;
+    align-self: center;
+    flex: 1;
     &::part(native) {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
+
 }
 
-.action-col {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.donate-button{
+    --padding-start: 1%;
+    --padding-end: 1%;
+    width: 35%;
+    flex: 0; 
+    border-radius: 5px;
+
+    align-items: right;
+    justify-content: right; 
+    float: right;
 }
 
 
