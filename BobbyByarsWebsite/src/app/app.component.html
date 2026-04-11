@@ -4,7 +4,7 @@
       <ion-grid>
         <ion-row class="ion-align-items-center">
           <ion-col size="1" >
-            <ion-button fill="clear" class="logo-button"> <img class="logo" src="../assets/icon/bbf_logo.png" alt="Bobby Byars Foundation Logo: Vision, Hope, and Empowerment"> </ion-button>
+            <ion-button fill="clear" (click)= "navigate('/')" class="logo-button"> <img class="logo" src="../assets/icon/bbf_logo.png" alt="Bobby Byars Foundation Logo: Vision, Hope, and Empowerment"> </ion-button>
           </ion-col>
           <ion-col size = "1.5"> <ion-title> Bobby Byars  </ion-title> <ion-title> Foundation </ion-title></ion-col>
           <ion-col size="5.5" class="nav-col">
@@ -13,7 +13,7 @@
             <ion-button class="menu-button" (click)="navigate('/events')">news/events</ion-button>
           </ion-col>
           <ion-col size="4" class="action-col">
-            <ion-button class="donate-button">search bar?</ion-button>
+            <ion-searchbar class="donate-button"  placeholder="Search..." ></ion-searchbar>
             <ion-button class="donate-button">donate</ion-button>
           </ion-col>
         </ion-row>
@@ -21,7 +21,5 @@
     </ion-toolbar>
   </ion-header>
   <ion-router-outlet></ion-router-outlet>
-  <ion-content>
-    <ion-router-outlet></ion-router-outlet>
-  </ion-content>
+  <ion-content> <ion-router-outlet></ion-router-outlet> </ion-content>
 </ion-app>

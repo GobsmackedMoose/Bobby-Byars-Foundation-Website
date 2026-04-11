@@ -1,13 +1,53 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>story</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">story</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid class="program-grid">
+
+    <!-- =============================================
+         Section 1: Page Banner
+         ============================================= -->
+    <ion-row class="story-banner ion-justify-content-center ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <h1 class="story-banner-title">[Page title, e.g. "The Story of Bobby Byars"]</h1>
+      </ion-col>
+    </ion-row>
+
+    <!-- =============================================
+         Section 2: His Story
+         ============================================= -->
+    <ion-row class="description-section ion-justify-content-center">
+      <ion-col size="12" size-md="10" size-lg="8">
+        <p>[Paragraph 1: Bobby's early life, upbringing, and the values that shaped him.]</p>
+        <p>[Paragraph 2: How he showed up in his community — what he did, who he helped, what he cared about.]</p>
+        <p>[Paragraph 3: His lasting impact and what people remember most about him.]</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- =============================================
+         Section 3: Pull Quote
+         ============================================= -->
+    <ion-row class="testimony-section ion-justify-content-center">
+      <ion-col size="12" size-md="10" size-lg="8">
+        <blockquote class="testimony-block">
+          <p class="testimony-text">[A meaningful quote about or from Bobby — from a family member, friend, or community member.]</p>
+          <footer class="testimony-attribution">— [Name, relationship to Bobby]</footer>
+        </blockquote>
+      </ion-col>
+    </ion-row>
+
+    <!-- =============================================
+         Section 4: CTA
+         ============================================= -->
+    <ion-row class="cta-section ion-justify-content-center">
+      <ion-col size="12" size-md="8" class="ion-text-center">
+        <div class="cta-rule"></div>
+        <h2 class="cta-title">[CTA headline, e.g. "Help Us Honor His Legacy"]</h2>
+        <p>[1–2 sentences inviting the reader to get involved or donate.]</p>
+        <div class="cta-group">
+          <ion-button shape="round" class="cta-primary">Donate Now</ion-button>
+          <ion-button shape="round" fill="outline" class="cta-outline">Get Involved</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
