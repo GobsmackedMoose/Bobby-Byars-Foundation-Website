@@ -6,7 +6,7 @@ export class Article {
 
     constructor(
         title: string, 
-        date: string, 
+        date: string, //since this is a string, make sure that all dates in the backend are formatted as xx/xx/xxxx
         content: string, 
         imageUrl: string
     ) {
