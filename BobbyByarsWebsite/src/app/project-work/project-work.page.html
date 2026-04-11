@@ -1,17 +1,102 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>project-work</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">project-work</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <p>
-    This is the ProjectWORK page
-  </p>
+  <!-- =============================================
+       Section 1: Hero / Description
+       ============================================= -->
+  <section class="hero-section">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+
+        <!-- Left column: Program name + description -->
+        <ion-col size="12" size-md="6" class="hero-text-col">
+          <h1 class="program-title">Project WORK</h1>
+          <p class="program-description">
+            A program that support and equips individuals to win through opportunities, resources, and knowledge.
+            This project honors  the legacy of Robert Parker Byars by supporting underprivileged students with an interest in the music and the arts.
+          </p>
+          <p class="program-description">
+            More desriptions of project WORK, maybe talk about Project WORK STEM
+          </p>
+        </ion-col>
+
+        <!-- Right column: Program photo -->
+        <ion-col size="12" size-md="6" class="hero-image-col">
+          <img
+            src="https://placehold.co/600x400"
+            alt="blank photo"
+            class="program-photo"
+          />
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 2: Testimony
+       ============================================= -->
+  <section class="testimony-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <blockquote class="testimony-block">
+            <p class="testimony-text">
+              get a quote or a story to give people an idea of how project WORK 
+              has impacted the lives of students and families in the community.
+            </p>
+            <footer class="testimony-attribution">— Jane D.</footer>
+          </blockquote>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 3: Eligibility & How to Join
+       ============================================= -->
+  <section class="eligibility-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+
+          <hr class="section-divider" aria-hidden="true" />
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">Who Is Eligible</h3>
+            <p>
+              Project WORK is open to all girls in middle school and high school who 
+              are interested in making an impact in their community
+            </p>
+          </div>
+
+          <div class="eligibility-block">
+            <h3 class="section-subheading">How to Join</h3>
+            <p>
+              Explain how to join project WORK, maybe include a link to an application form 
+              or contact information for the program coordinator.
+            </p>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- =============================================
+       Section 4: Call to Action Footer
+       ============================================= -->
+  <section class="cta-section">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" class="cta-primary">Apply Now</ion-button>
+        </ion-col>
+        <ion-col size="12" size-sm="auto" class="cta-col">
+          <ion-button expand="block" fill="outline" class="cta-outline">Contact Us</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
 </ion-content>

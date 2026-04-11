@@ -10,10 +10,11 @@
 
 .logo-button {
     cursor: pointer;
-    height: 100%;
+    height: 100;
     width: 100%;
     --padding-start: 0;
     --padding-end: 0;
+    flex-grow: 0;
     &::part(native) {
         padding: 0;
     }

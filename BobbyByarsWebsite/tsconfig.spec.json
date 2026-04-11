@@ -6,6 +6,7 @@
     "types": [
       "jasmine"
     ],
+    "declaration": true,
     "composite": true,
   },
   "files": [
@@ -14,6 +15,7 @@
   ],
   "include": [
     "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.ts"
   ]
 }
