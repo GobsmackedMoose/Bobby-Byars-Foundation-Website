@@ -9,6 +9,72 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+@use "theme/variables";
+
+// ─── GLOBAL BUTTON STYLES ─────────────────────────────────────────────────────
+
+ion-button {
+  --background:       var(--bbf-navy);
+  --background-hover: var(--bbf-gold-light);
+  --color:            var(--bbf-white);
+  --border-radius:    50px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+ion-button:has(img) {
+  --background:       transparent;
+  --background-hover: transparent;
+  --box-shadow:       none;
+}
+
+ion-button[fill="outline"] {
+  --background:       transparent;
+  --background-hover: rgba(255, 255, 255, 0.08);
+  --color:            var(--bbf-navy);
+  --border-width:     1px;
+  --border-style:     solid;
+}
+
+ion-button.cta-outline {
+  --border-color: var(--bbf-white);
+  --color:        var(--bbf-white);
+}
+
+// ─── GLOBAL CARD STYLES ───────────────────────────────────────────────────────
+
+ion-card {
+  --background:  var(--bbf-cream);
+  --color:       var(--bbf-charcoal);
+  border-radius: 16px;
+  box-shadow:    0 4px 20px rgba(0, 0, 0, 0.08);
+  margin:        0;
+}
+
+ion-card-header {
+  padding-bottom: 4px;
+}
+
+ion-card-title {
+  color:       var(--bbf-navy);
+  font-size:   1.1rem;
+  font-weight: 700;
+}
+
+ion-card-subtitle {
+  color:          var(--bbf-accent);
+  font-size:      0.75rem;
+  font-weight:    600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+ion-card-content {
+  font-size:   0.9rem;
+  line-height: 1.6;
+}
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
