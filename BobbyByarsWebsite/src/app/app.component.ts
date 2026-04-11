@@ -12,8 +12,8 @@ import { ProgramsPopoverComponent } from './components/programs-popover/programs
 })
 export class AppComponent {
   constructor(private popoverController: PopoverController, private router: Router) {}
-  
-  
+
+    
   async openProgramsMenu(event: Event) {
     const popover = await this.popoverController.create({
       component: ProgramsPopoverComponent,
