@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { ProgramsPopoverComponent } from './components/programs-popover/programs-popover.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { ProgramsPopoverComponent } from './components/programs-popover/programs
   standalone: false,
 })
 export class AppComponent {
-  constructor(private popoverController: PopoverController) {}
+  constructor(private popoverController: PopoverController, private router: Router) {}
   
   
   async openProgramsMenu(event: Event) {
@@ -20,6 +21,10 @@ export class AppComponent {
     });
     await popover.present();
     console.log("programs menu opened");
+  }
+
+  navigate(url: string) {
+    this.router.navigateByUrl(url)
   }
 }
 
