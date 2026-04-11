@@ -20,12 +20,12 @@
 }
 
 .hero-section {
-  padding:    56px 16px;
+  padding:    72px 24px;
   background: linear-gradient(135deg, #1a0a2e 0%, #3b1a6b 60%, var(--bbf-purple) 100%);
 }
 
 .hero-text-col {
-  padding-right: 32px;
+  padding-right: 48px;
 }
 
 .program-eyebrow {
@@ -44,16 +44,16 @@
 .program-title {
   color:         #fff !important;
   font-size:     2.5rem !important;
-  margin-bottom: 16px;
+  font-weight:   700;
+  line-height:   1.2;
+  margin:        0 0 20px;
 }
 
-.program-description {
-  color:         rgba(255, 255, 255, 0.88) !important;
-  font-size:     1.05rem;
-  line-height:   1.7;
-  margin-bottom: 10px;
-
-  p { color: inherit; margin: 0; }
+.program-intro {
+  color:       rgba(255, 255, 255, 0.82);
+  font-size:   1.05rem;
+  line-height: 1.75;
+  margin:      0;
 }
 
 .hero-image-col {
@@ -70,95 +70,125 @@
 }
 
 .testimony-section {
-  padding:    48px 16px;
+  padding:    64px 24px;
   background: var(--bbf-cream);
 }
 
 .testimony-block {
   margin:        0;
-  padding:       32px 32px 32px 36px;
+  padding:       36px 40px;
   border-left:   5px solid var(--bbf-purple);
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 16px 16px 0;
   background:    #fff;
-  box-shadow:    0 2px 20px rgba(113, 58, 175, 0.08);
+  box-shadow:    0 4px 24px rgba(113, 58, 175, 0.1);
 }
 
 .testimony-text {
-  font-size:     1.1rem;
-  font-style:    italic;
-  line-height:   1.8;
-  color:         var(--bbf-charcoal) !important;
-  margin-bottom: 16px;
-  display:       block;
+  font-size:   1.15rem;
+  font-style:  italic;
+  line-height: 1.8;
+  color:       var(--bbf-charcoal);
+  margin:      0 0 20px;
 }
 
 .testimony-attribution {
-  font-size:   0.9rem;
-  font-weight: 700;
-  color:       var(--bbf-purple);
-  font-style:  normal;
+  font-size:      0.88rem;
+  font-weight:    700;
+  letter-spacing: 0.04em;
+  color:          var(--bbf-purple);
+  font-style:     normal;
 }
+
+// ── Detailed Description (below quote) ────────────────────────────────────────
+
+.description-section {
+  padding:    64px 24px;
+  background: #fff;
+
+  p {
+    color:       var(--bbf-charcoal);
+    font-size:   1.05rem;
+    line-height: 1.8;
+    margin:      0 0 1.1rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+// ── Eligibility ───────────────────────────────────────────────────────────────
 
 .eligibility-section {
-  padding:    48px 16px;
-  background: #fff;
-}
-
-.section-divider {
-  display: none;
+  padding:    64px 24px;
+  background: var(--bbf-cream);
 }
 
 .eligibility-card {
-  --background:  var(--bbf-cream);
-  border-left:   4px solid var(--bbf-accent);
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow:    0 2px 12px rgba(113, 58, 175, 0.07);
-
-  ion-card-header { padding-bottom: 4px; }
-
-  ion-card-title {
-    color:     var(--bbf-purple);
-    font-size: 1.1rem;
-  }
-
-  ion-card-content {
-    color:       var(--bbf-charcoal);
-    font-size:   0.97rem;
-    line-height: 1.7;
-  }
+  padding:       40px 48px;
+  border-left:   5px solid var(--bbf-purple);
+  border-radius: 0 16px 16px 0;
+  background:    #fff;
+  box-shadow:    0 4px 24px rgba(113, 58, 175, 0.08);
 }
 
+.eligibility-title {
+  color:       var(--bbf-purple);
+  font-size:   1.25rem;
+  font-weight: 700;
+  margin:      0 0 14px;
+}
+
+.eligibility-card p {
+  color:       var(--bbf-charcoal);
+  font-size:   1rem;
+  line-height: 1.75;
+  margin:      0;
+}
+
+// ── CTA / How to Join ─────────────────────────────────────────────────────────
+
 .cta-section {
-  padding:    64px 24px;
+  padding:    80px 24px;
   background: #1a0a2e;
   text-align: center;
 
-  ion-header {
-    color:         #fff !important;
-    font-size:     1.8rem !important;
-    margin-bottom: 12px;
-  }
-
-  ion-text {
-    color:       rgba(255, 255, 255, 0.75) !important;
-    font-size:   1rem;
-    line-height: 1.7;
-    display:     block;
-    margin-bottom: 32px;
-
-    p { color: inherit; }
+  p {
+    color:       rgba(255, 255, 255, 0.72);
+    font-size:   1.05rem;
+    line-height: 1.75;
+    max-width:   560px;
+    margin:      0 auto 40px;
   }
 }
 
-.cta-col { padding: 8px 12px; }
+.cta-rule {
+  width:         48px;
+  height:        3px;
+  background:    var(--bbf-accent);
+  border-radius: 2px;
+  margin:        0 auto 28px;
+  opacity:       0.7;
+}
+
+.cta-title {
+  color:       #fff;
+  font-size:   2rem;
+  font-weight: 700;
+  margin:      0 0 16px;
+}
+
+.cta-group {
+  display:         flex;
+  gap:             16px;
+  justify-content: center;
+  flex-wrap:       wrap;
+}
 
 .cta-primary {
   --background:       var(--bbf-purple);
   --background-hover: var(--bbf-accent);
   --color:            #fff;
   --border-radius:    50px;
-  --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.4);
+  --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.45);
   font-weight:        700;
   letter-spacing:     0.05em;
   min-width:          160px;
@@ -175,14 +205,15 @@
 }
 
 @media (max-width: 767px) {
-  .hero-section    { padding: 40px 16px; }
-  .hero-text-col   { padding-right: 0; margin-bottom: 28px; }
-  .program-title   { font-size: 1.8rem !important; }
-  .testimony-block { padding: 24px 20px 24px 24px; }
-  .cta-col         { width: 100%; padding: 6px 0; }
+  .hero-section     { padding: 48px 20px; }
+  .hero-text-col    { padding-right: 0; margin-bottom: 32px; }
+  .program-title    { font-size: 1.8rem !important; }
+  .testimony-block  { padding: 28px 24px 28px 28px; }
+  .eligibility-card { padding: 28px 24px 28px 28px; }
+  .cta-section      { padding: 56px 20px; }
 
   .cta-primary,
-  .cta-outline     { min-width: unset; width: 100%; }
+  .cta-outline      { min-width: unset; width: 100%; }
 }
 
 // ─── GLOBAL HEADER STYLES ─────────────────────────────────────────────────────
