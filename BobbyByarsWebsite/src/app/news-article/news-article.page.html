@@ -5,6 +5,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <p>{{ testArticle.title }}</p>
-  <p>Slug: {{ testArticle.slug }}</p>
+  <ng-container *ngIf="article; else notFound">
+    <p>{{ article.title }}</p>
+    <p>Slug: {{ article.slug }}</p>
+  </ng-container>
+
+  <ng-template #notFound>
+    <p>Article not found.</p>
+  </ng-template>
 </ion-content>

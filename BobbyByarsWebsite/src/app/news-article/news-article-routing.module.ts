@@ -5,7 +5,7 @@ import { NewsArticlePage } from './news-article.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':articleId',
     component: NewsArticlePage
   }
 ];

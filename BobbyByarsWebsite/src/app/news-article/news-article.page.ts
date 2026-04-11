@@ -36,6 +36,7 @@ export class NewsArticlePage implements OnInit {
   }
 
   ngOnInit() {
+
     const slug = this.route.snapshot.paramMap.get('articleId');
     this.article = this.allArticles.find(article => article.slug === slug);
   }
