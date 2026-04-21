@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
 import { ActivatedRoute } from '@angular/router';
+//import { readFile } from 'fs/promises';
 
 @Component({
   selector: 'app-news-article',
@@ -28,6 +29,7 @@ export class NewsArticlePage implements OnInit {
     "Placeholder image for second test article"
   )];
 
+  //const articleList = await readFile('../articles.txt', 'utf-8');
   allArticles: Article[] = this.allArticlesTest;
   article: Article | undefined;
 
