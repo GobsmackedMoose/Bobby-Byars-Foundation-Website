@@ -8,6 +8,10 @@
   <ng-container *ngIf="article; else notFound">
     <p>{{ article.title }}</p>
     <p>Slug: {{ article.slug }}</p>
+    <p>subtitle: {{ article.subtitle }}</p>
+    <p>Published At: {{ article.date }}</p>
+    <p>Content: {{ article.content}}</p>
+    <p>Image URL: {{ article.imageUrl }}</p>
   </ng-container>
 
   <ng-template #notFound>
