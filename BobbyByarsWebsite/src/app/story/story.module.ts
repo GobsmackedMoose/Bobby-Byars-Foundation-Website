@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { StoryPageRoutingModule } from './story-routing.module';
 
 import { StoryPage } from './story.page';
+import { ComponentssModule } from '../componentss/componentss-module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    StoryPageRoutingModule
+    StoryPageRoutingModule,
+    ComponentssModule
   ],
   declarations: [StoryPage]
 })

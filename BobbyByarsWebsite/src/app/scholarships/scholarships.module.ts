@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ScholarshipsPageRoutingModule } from './scholarships-routing.module';
 
 import { ScholarshipsPage } from './scholarships.page';
+import { ComponentssModule } from '../componentss/componentss-module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ScholarshipsPageRoutingModule
+    ScholarshipsPageRoutingModule,
+    ComponentssModule
   ],
   declarations: [ScholarshipsPage]
 })
