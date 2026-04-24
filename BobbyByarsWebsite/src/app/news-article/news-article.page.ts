@@ -31,35 +31,38 @@ export class NewsArticlePage implements OnInit {
 
   
   articleData: string | undefined//readFile('../articles.txt', 'utf-8');
-  allArticles: Article[] = this.allArticlesTest; //[]
+  allArticles: Article[] = []
   article: Article | undefined;
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {
     this.http.get('/assets/articles.txt', { responseType: 'text' }).subscribe(data => {
       this.articleData = data;
+      this.allArticles = this.setArticleList(this.articleData);
+      const slug = this.route.snapshot.paramMap.get('articleId');
+      this.article = this.allArticles.find(article => article.slug === slug);
     });
   }
 
   async ngOnInit() {
-    this.allArticles = this.setArticleList(await this.articleData);
-    const slug = this.route.snapshot.paramMap.get('articleId');
-    this.article = this.allArticles.find(article => article.slug === slug);
+   
   }
 
   setArticleList(rawData: string | undefined): Article[] {
     if (!rawData) {
+      console.error('No article data found');
       return [];
     }
-    let allSections: string[] = rawData.split('----').slice(3, -1);
+    let allSections: string[] = rawData.split('----').slice(4, -1);
     let articleArray: Article[] = [];
     let i: number = 0;
     for (i = 0; i < allSections.length; i++) {
-      let title = '';
+      let title = 'test';
       let subtitle = '';
       let date = '';
       let content = '';
       let imageUrl = '';
       let imageAltText = '';
+      console.log(allSections[i]);
 
       articleArray.push(new Article(title, subtitle, date, content, imageUrl, imageAltText));
     }
