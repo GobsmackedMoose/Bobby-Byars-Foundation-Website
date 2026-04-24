@@ -20,14 +20,6 @@ export class EventsPage implements OnInit {
       "https://via.placeholder.com/150",
       "Placeholder image for test article"
     ),
-    new Article(
-      "Test Article number 2",
-      "Test Article Subtitle number 2",
-      "01/01/2026",
-      "This is the content of the second test article. It is meant to demonstrate how an article will be displayed on the news article page.",
-      "https://via.placeholder.com/150",
-      "Placeholder image for second test article"
-    ),
     
   ];
 
