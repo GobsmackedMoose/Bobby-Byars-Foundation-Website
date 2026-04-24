@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
 import { ActivatedRoute } from '@angular/router';
-import { readFile } from 'fs/promises';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-news-article',
@@ -29,12 +29,15 @@ export class NewsArticlePage implements OnInit {
     "Placeholder image for second test article"
   )];
 
-  articleData = readFile('../articles.txt', 'utf-8');
+  
+  articleData: string | undefined//readFile('../articles.txt', 'utf-8');
   allArticles: Article[] = this.allArticlesTest; //[]
   article: Article | undefined;
 
-  constructor(private route: ActivatedRoute) {
-    
+  constructor(private route: ActivatedRoute, private http: HttpClient) {
+    this.http.get('/assets/articles.txt', { responseType: 'text' }).subscribe(data => {
+      this.articleData = data;
+    });
   }
 
   async ngOnInit() {
@@ -43,7 +46,10 @@ export class NewsArticlePage implements OnInit {
     this.article = this.allArticles.find(article => article.slug === slug);
   }
 
-  setArticleList(rawData: string) {
+  setArticleList(rawData: string | undefined): Article[] {
+    if (!rawData) {
+      return [];
+    }
     let allSections: string[] = rawData.split('----').slice(3, -1);
     let articleArray: Article[] = [];
     let i: number = 0;
