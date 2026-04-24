@@ -1,5 +1,5 @@
 This is where you will put the articles you write for the website. 
-IMPORTANT: don't write the articles in this file, just copy and paste them when you are done.
+IMPORTANT: don't write the articles in this file, just copy and paste them when you are done. Do not include enters anywhere except where you intend to create a new paragraph in the content.
 To add a new blog post, copy the template and paste it under the ALL POSTS marker. Make sure there is a "----" on the top and bottom of the post.
 The following template for the article should be followed, with the text inside the curly braces being what you write, and everything else being copy/pasted:
 
@@ -8,8 +8,8 @@ TEMPLATE:
 Title: {Write here}
 Subtitle: {Write here}
 Date: {Write a date in the xx/xx/xxxx format. Only the 10 characters of the date should be in this section}
-Content: {Put the main content of the blog here}
-Image URL: {Put the url to an image for the post. The url go be to the assets folder, then be a photo inside of it}
+Content: {Paste the main content of the blog here}
+Image URL: {Paste the url to an image for the post. The url go be to the assets folder, then be a photo inside of it}
 Image Alt Text: {This is what screen readers will see. Describe the image so that blind people know what it was.}
 
 
