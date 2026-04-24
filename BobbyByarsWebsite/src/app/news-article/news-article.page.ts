@@ -29,7 +29,7 @@ export class NewsArticlePage implements OnInit {
     "Placeholder image for second test article"
   )];
 
-  //const articleList = await readFile('../articles.txt', 'utf-8');
+  articleData = readFile('../articles.txt', 'utf-8');
   allArticles: Article[] = this.allArticlesTest; //[]
   article: Article | undefined;
 
@@ -37,10 +37,30 @@ export class NewsArticlePage implements OnInit {
     
   }
 
-  ngOnInit() {
-
+  async ngOnInit() {
+    this.allArticles = this.setArticleList(await this.articleData);
     const slug = this.route.snapshot.paramMap.get('articleId');
     this.article = this.allArticles.find(article => article.slug === slug);
+  }
+
+  setArticleList(rawData: string) {
+    let allSections: string[] = rawData.split('----').slice(3, -1);
+    let articleArray: Article[] = [];
+    let i: number = 0;
+    for (i = 0; i < allSections.length; i++) {
+      let title = '';
+      let subtitle = '';
+      let date = '';
+      let content = '';
+      let imageUrl = '';
+      let imageAltText = '';
+
+      articleArray.push(new Article(title, subtitle, date, content, imageUrl, imageAltText));
+    }
+
+    return articleArray;
+    
+
   }
 
 }
