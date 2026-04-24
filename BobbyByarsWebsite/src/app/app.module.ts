@@ -11,13 +11,8 @@ import { ProgramsPopoverComponent } from './components/programs-popover/programs
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-<<<<<<< HEAD
-  declarations: [AppComponent, ProgramsPopoverComponent, FooterComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-=======
   declarations: [AppComponent, ProgramsPopoverComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
->>>>>>> f7d2629733c7094b353ed3b53f7e47633deb8492
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
