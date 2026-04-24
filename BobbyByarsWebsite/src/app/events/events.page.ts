@@ -42,8 +42,7 @@ export class EventsPage implements OnInit {
   }
 
   goToArticle(articleId: string) {
-    //this.router.navigateByUrl(`/events/${articleId}`);
-    this.navigate(articleId);
+    this.router.navigateByUrl(`/news-article/${articleId}`);
   }
 
 

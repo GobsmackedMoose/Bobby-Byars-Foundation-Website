@@ -43,7 +43,7 @@
             <ion-card-title>{{article.title}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-button expand="block" (click)="goToArticle('/news-article')">
+            <ion-button expand="block" (click)="goToArticle(article.slug)">
               Read More
               <ion-icon slot="end" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </ion-button>
