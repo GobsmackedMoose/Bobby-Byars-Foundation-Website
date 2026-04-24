@@ -3,14 +3,24 @@
   <ion-grid class="program-grid">
 
     <!-- =============================================
-         Section 1: Hero
+         Section 1: Hero / Description
          ============================================= -->
     <ion-row class="hero-section ion-align-items-center">
+
+      <!-- Left column: Program name + description -->
       <ion-col size="12" size-md="6" class="hero-text-col">
         <span class="program-eyebrow">In Her Honor</span>
-        <h1 class="program-title">The Frances Byars Project</h1>
-        <p class="program-intro">Special projects in memory of Frances Parker Byars that support women and families in crisis. This includes but is not limited to blankets for babies, bereavement support, holiday gifts, and more.</p>
+        <ion-header class="program-title">Frances Project</ion-header>
+        <ion-text class="program-description">
+          <p>Special projects in memory of Frances Parker Byars that support women and families in crisis.
+          This includes but is not limited to blankets for babies, bereavement support, holiday gifts, etc.</p>
+        </ion-text>
+        <ion-text class="program-description">
+          <p>More descriptions of Frances Project and how it works</p>
+        </ion-text>
       </ion-col>
+
+      <!-- Right column: Program photo -->
       <ion-col size="12" size-md="6" class="hero-image-col">
         <img
           src="https://placehold.co/600x400"
@@ -18,55 +28,63 @@
           class="program-photo"
         />
       </ion-col>
+
     </ion-row>
 
     <!-- =============================================
-         Section 2: Quote
+         Section 2: Testimony
          ============================================= -->
     <ion-row class="testimony-section ion-justify-content-center">
       <ion-col size="12" size-md="10" size-lg="8">
         <blockquote class="testimony-block">
-          <p class="testimony-text">Get a quote or a story to give people an idea of how Frances Project has impacted the lives of women and families in the community.</p>
+          <ion-text class="testimony-text">
+            Get a quote or a story to give people an idea of how Frances Project
+            has impacted the lives of women and families in the community.
+          </ion-text>
           <footer class="testimony-attribution">— Jane D.</footer>
         </blockquote>
       </ion-col>
     </ion-row>
 
     <!-- =============================================
-         Section 3: Detailed Description
+         Section 3: Eligibility
          ============================================= -->
-    <ion-row class="description-section ion-justify-content-center">
-      <ion-col size="12" size-md="10" size-lg="8">
-        <p>The Frances Project is a compassionate outreach initiative of the Bobby Byars Foundation, created in loving memory of Frances Byars. This program reflects her legacy of service, strength, and commitment to family by providing meaningful support to families experiencing crisis.</p>
-        <p>The Frances Project serves as the Foundation's primary vehicle for responding to urgent community needs—offering essential resources, guidance, and hands-on assistance while engaging in active community service. Through coordinated support efforts, partnerships, and volunteer-driven initiatives, the program helps stabilize families during difficult times and restores hope where it is needed most.</p>
-        <p>By honoring Frances Byars' memory through action, The Frances Project embodies the Foundation's commitment to compassion, dignity, and community care.</p>
+    <ion-row class="eligibility-section">
+      <ion-col size="12">
+        <ion-card class="eligibility-card">
+          <ion-card-header>
+            <ion-card-title>Who Is Eligible</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            This eligibility section might not be relevant for the Frances Project —
+            we should ask Sheila what she thinks.
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
 
-    <!-- =============================================
-         Section 4: Eligibility
-         ============================================= -->
-    <ion-row class="eligibility-section ion-justify-content-center">
-      <ion-col size="12" size-md="10" size-lg="8">
-        <div class="eligibility-card">
-          <h2 class="eligibility-title">Who Is Eligible</h2>
-          <p>This eligibility section might not be relevant for the Frances Project — we should ask Sheila what she thinks.</p>
-        </div>
-      </ion-col>
-    </ion-row>
 
     <!-- =============================================
-         Section 5: How to Join + CTA
+         Section 4: How to Join
          ============================================= -->
     <ion-row class="cta-section ion-justify-content-center">
       <ion-col size="12" size-md="8" class="ion-text-center">
-        <div class="cta-rule"></div>
-        <h2 class="cta-title">How to Join</h2>
-        <p>This and the apply button also might not be relevant, we can workshop it later.</p>
-        <div class="cta-group">
-          <ion-button shape="round" class="cta-primary">Apply Now</ion-button>
-          <ion-button shape="round" fill="outline" class="cta-outline">Contact Us</ion-button>
-        </div>
+        <ion-header class="program-title">How to Join</ion-header>
+        <ion-text class="program-description">
+          <p>This and the apply button also might not be relevant, we can workshop it later.</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <!-- =============================================
+         Section 5: Call to Action Footer
+         ============================================= -->
+    <ion-row class="cta-section ion-justify-content-center">
+      <ion-col size="12" size-sm="auto" class="cta-col">
+        <ion-button expand="block" class="cta-primary">Apply Now</ion-button>
+      </ion-col>
+      <ion-col size="12" size-sm="auto" class="cta-col">
+        <ion-button expand="block" fill="outline" class="cta-outline">Contact Us</ion-button>
       </ion-col>
     </ion-row>
 

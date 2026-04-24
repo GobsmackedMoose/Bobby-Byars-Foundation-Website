@@ -20,12 +20,20 @@
 }
 
 .hero-section {
-  padding:    80px 24px 72px;
-  background: linear-gradient(160deg, var(--bbf-purple) 0%, #3b1a6b 55%, #1e0a3c 100%);
+<<<<<<< HEAD
+  padding:    72px 24px;
+=======
+  padding:    56px 16px;
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
+  background: linear-gradient(135deg, #1a0a2e 0%, #3b1a6b 60%, var(--bbf-purple) 100%);
 }
 
 .hero-text-col {
+<<<<<<< HEAD
   padding-right: 48px;
+=======
+  padding-right: 32px;
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
 }
 
 .program-eyebrow {
@@ -44,6 +52,7 @@
 .program-title {
   color:         #fff !important;
   font-size:     2.5rem !important;
+<<<<<<< HEAD
   font-weight:   700;
   line-height:   1.2;
   margin:        0 0 20px;
@@ -54,6 +63,18 @@
   font-size:   1.05rem;
   line-height: 1.75;
   margin:      0;
+=======
+  margin-bottom: 16px;
+}
+
+.program-description {
+  color:         rgba(255, 255, 255, 0.88) !important;
+  font-size:     1.05rem;
+  line-height:   1.7;
+  margin-bottom: 10px;
+
+  p { color: inherit; margin: 0; }
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
 }
 
 .hero-image-col {
@@ -70,12 +91,17 @@
 }
 
 .testimony-section {
+<<<<<<< HEAD
   padding:    64px 24px;
+=======
+  padding:    48px 16px;
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
   background: var(--bbf-cream);
 }
 
 .testimony-block {
   margin:        0;
+<<<<<<< HEAD
   padding:       36px 40px;
   border-left:   5px solid var(--bbf-purple);
   border-radius: 0 16px 16px 0;
@@ -188,7 +214,96 @@
   --background-hover: var(--bbf-accent);
   --color:            #fff;
   --border-radius:    50px;
+<<<<<<< HEAD
   --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.45);
+=======
+  --box-shadow:       0 4px 20px rgba(0, 0, 0, 0.45);
+=======
+  padding:       32px 32px 32px 36px;
+  border-left:   5px solid var(--bbf-purple);
+  border-radius: 0 12px 12px 0;
+  background:    #fff;
+  box-shadow:    0 2px 20px rgba(113, 58, 175, 0.08);
+}
+
+.testimony-text {
+  font-size:     1.1rem;
+  font-style:    italic;
+  line-height:   1.8;
+  color:         var(--bbf-charcoal) !important;
+  margin-bottom: 16px;
+  display:       block;
+}
+
+.testimony-attribution {
+  font-size:   0.9rem;
+  font-weight: 700;
+  color:       var(--bbf-purple);
+  font-style:  normal;
+}
+
+.eligibility-section {
+  padding:    48px 16px;
+  background: #fff;
+}
+
+.section-divider {
+  display: none;
+}
+
+.eligibility-card {
+  --background:  var(--bbf-cream);
+  border-left:   4px solid var(--bbf-accent);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow:    0 2px 12px rgba(113, 58, 175, 0.07);
+
+  ion-card-header { padding-bottom: 4px; }
+
+  ion-card-title {
+    color:     var(--bbf-purple);
+    font-size: 1.1rem;
+  }
+
+  ion-card-content {
+    color:       var(--bbf-charcoal);
+    font-size:   0.97rem;
+    line-height: 1.7;
+  }
+}
+
+.cta-section {
+  padding:    64px 24px;
+  background: #1a0a2e;
+  text-align: center;
+
+  ion-header {
+    color:         #fff !important;
+    font-size:     1.8rem !important;
+    margin-bottom: 12px;
+  }
+
+  ion-text {
+    color:       rgba(255, 255, 255, 0.75) !important;
+    font-size:   1rem;
+    line-height: 1.7;
+    display:     block;
+    margin-bottom: 32px;
+
+    p { color: inherit; }
+  }
+}
+
+.cta-col { padding: 8px 12px; }
+
+.cta-primary {
+  --background:       var(--bbf-purple);
+  --background-hover: var(--bbf-accent);
+  --color:            #fff;
+  --border-radius:    50px;
+  --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.4);
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
+>>>>>>> 82b09df5 (merging)
   font-weight:        700;
   letter-spacing:     0.05em;
   min-width:          160px;
@@ -205,6 +320,7 @@
 }
 
 @media (max-width: 767px) {
+<<<<<<< HEAD
   .hero-section     { padding: 48px 20px; }
   .hero-text-col    { padding-right: 0; margin-bottom: 32px; }
   .program-title    { font-size: 1.8rem !important; }
@@ -214,6 +330,16 @@
 
   .cta-primary,
   .cta-outline      { min-width: unset; width: 100%; }
+=======
+  .hero-section    { padding: 40px 16px; }
+  .hero-text-col   { padding-right: 0; margin-bottom: 28px; }
+  .program-title   { font-size: 1.8rem !important; }
+  .testimony-block { padding: 24px 20px 24px 24px; }
+  .cta-col         { width: 100%; padding: 6px 0; }
+
+  .cta-primary,
+  .cta-outline     { min-width: unset; width: 100%; }
+>>>>>>> 46c2a245 (programs is pretty and home pg is little prettier. just claude)
 }
 
 // ─── GLOBAL HEADER STYLES ─────────────────────────────────────────────────────
