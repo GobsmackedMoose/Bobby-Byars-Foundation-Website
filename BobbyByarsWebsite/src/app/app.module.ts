@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProgramsPopoverComponent } from './components/programs-popover/programs-popover.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { ComponentssModule } from './componentss/componentss-module';
 
 @NgModule({
   declarations: [AppComponent, ProgramsPopoverComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ComponentssModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
