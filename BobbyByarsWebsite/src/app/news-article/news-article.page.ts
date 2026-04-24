@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news-article',
@@ -35,7 +36,7 @@ export class NewsArticlePage implements OnInit {
   allArticles: Article[] = []     // parsed list of all articles from articles.txt
   article: Article | undefined;   // the single article to display on this page, matched by URL slug
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
     // Fetch articles.txt from the assets folder. The subscribe callback runs asynchronously
     // once the file loads, so all dependent logic (parsing, slug matching) lives inside it.
     this.http.get('/assets/articles.txt', { responseType: 'text' }).subscribe(data => {
@@ -91,7 +92,10 @@ export class NewsArticlePage implements OnInit {
     }
 
     return articleArray;
+  }
 
+  navigate(nextPage: string) {
+    this.router.navigateByUrl(nextPage);
 
   }
 

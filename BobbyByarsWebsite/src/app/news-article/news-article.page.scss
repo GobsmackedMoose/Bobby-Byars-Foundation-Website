@@ -1,0 +1,174 @@
+// ─── GRID ─────────────────────────────────────────────────────────────────────
+
+.article-grid {
+  --ion-grid-padding: 0;
+  padding: 0;
+}
+
+// ─── SHARED ───────────────────────────────────────────────────────────────────
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bbf-gold);
+  margin: 0 0 14px;
+}
+
+// ─── BANNER ───────────────────────────────────────────────────────────────────
+
+.article-banner {
+  .banner-inner {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(160deg, var(--bbf-purple) 0%, #3b1a6b 55%, #1e0a3c 100%);
+    overflow: hidden;
+  }
+
+  .banner-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.25;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(30, 10, 60, 0.9) 0%, rgba(30, 10, 60, 0.4) 60%, transparent 100%);
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 48px 32px 48px;
+    max-width: 860px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .banner-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--bbf-white);
+    line-height: 1.2;
+    margin: 0 0 12px;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .banner-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+}
+
+// ─── ARTICLE BODY ─────────────────────────────────────────────────────────────
+
+.body-section {
+  background: var(--bbf-cream);
+  padding: 64px 24px;
+
+  .article-body {
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--bbf-charcoal);
+      margin: 0 0 24px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
+// ─── BACK LINK ────────────────────────────────────────────────────────────────
+
+.back-section {
+  background: var(--bbf-cream);
+  padding: 0 24px 64px;
+
+  .back-rule {
+    width: 60px;
+    height: 3px;
+    background: var(--bbf-purple);
+    margin-bottom: 24px;
+  }
+
+  .back-btn {
+    --color: var(--bbf-purple);
+    --color-hover: var(--bbf-accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// ─── NOT FOUND ────────────────────────────────────────────────────────────────
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 24px;
+  background: var(--bbf-cream);
+  min-height: 60vh;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bbf-charcoal);
+    margin: 0 0 16px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--bbf-charcoal);
+    margin: 0 0 32px;
+  }
+
+  ion-button.cta-primary {
+    --background: var(--bbf-purple);
+    --background-hover: var(--bbf-accent);
+    --color: #fff;
+    --border-radius: 50px;
+    font-weight: 700;
+  }
+}
+
+// ─── ANIMATION ────────────────────────────────────────────────────────────────
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+// ─── RESPONSIVE ───────────────────────────────────────────────────────────────
+
+@media (max-width: 767px) {
+  .article-banner {
+    .banner-inner { min-height: 280px; }
+    .banner-content { padding: 32px 20px; }
+    .banner-title { font-size: 1.6rem; }
+    .banner-subtitle { font-size: 1rem; }
+  }
+
+  .body-section { padding: 40px 20px; }
+  .back-section { padding: 0 20px 40px; }
+}

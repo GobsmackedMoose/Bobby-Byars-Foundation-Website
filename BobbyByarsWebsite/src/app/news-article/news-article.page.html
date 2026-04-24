@@ -1,20 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>news-article</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+
   <ng-container *ngIf="article; else notFound">
-    <p>{{ article.title }}</p>
-    <p>Slug: {{ article.slug }}</p>
-    <p>subtitle: {{ article.subtitle }}</p>
-    <p>Published At: {{ article.date }}</p>
-    <p>Content: {{ article.content}}</p>
-    <p>Image URL: {{ article.imageUrl }}</p>
+    <ion-grid class="article-grid">
+
+      <!-- ── BANNER ─────────────────────────────────────────────────── -->
+      <ion-row class="article-banner">
+        <ion-col size="12" class="ion-no-padding">
+          <div class="banner-inner">
+            <img
+              *ngIf="article.imageUrl"
+              [src]="article.imageUrl"
+              [alt]="article.imageAltText"
+              class="banner-bg-img"
+            />
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+              <p class="eyebrow">NEWS &amp; UPDATES</p>
+              <h1 class="banner-title">{{ article.title }}</h1>
+              <p class="banner-subtitle" *ngIf="article.subtitle">{{ article.subtitle }}</p>
+              <p class="banner-date">{{ article.date }}</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- ── ARTICLE BODY ───────────────────────────────────────────── -->
+      <ion-row class="body-section ion-justify-content-center">
+        <ion-col size="12" size-md="10" size-lg="8">
+          <div class="article-body">
+            <p>{{ article.content }}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- ── BACK LINK ──────────────────────────────────────────────── -->
+      <ion-row class="back-section ion-justify-content-center">
+        <ion-col size="12" size-md="10" size-lg="8">
+          <div class="back-rule"></div>
+          <ion-button fill="clear" class="back-btn" (click)="navigate('/events')">
+            ← Back to News
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
   </ng-container>
 
   <ng-template #notFound>
-    <p>Article not found.</p>
+    <div class="not-found">
+      <p class="eyebrow">404</p>
+      <h2>Article Not Found</h2>
+      <p>We couldn't find the article you were looking for.</p>
+      <ion-button shape="round" class="cta-primary" (click)="navigate('/events')">Back to News</ion-button>
+    </div>
   </ng-template>
+
 </ion-content>
