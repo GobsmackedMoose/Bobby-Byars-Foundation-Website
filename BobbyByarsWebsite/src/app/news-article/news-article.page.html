@@ -5,9 +5,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">news-article</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ng-container *ngIf="article; else notFound">
+    <p>{{ article.title }}</p>
+    <p>Slug: {{ article.slug }}</p>
+    <p>subtitle: {{ article.subtitle }}</p>
+    <p>Published At: {{ article.date }}</p>
+    <p>Content: {{ article.content}}</p>
+    <p>Image URL: {{ article.imageUrl }}</p>
+  </ng-container>
+
+  <ng-template #notFound>
+    <p>Article not found.</p>
+  </ng-template>
 </ion-content>
