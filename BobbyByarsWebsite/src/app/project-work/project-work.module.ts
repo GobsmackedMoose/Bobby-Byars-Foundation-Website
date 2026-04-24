@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ProjectWorkPageRoutingModule } from './project-work-routing.module';
 
 import { ProjectWorkPage } from './project-work.page';
+import { ComponentssModule } from '../componentss/componentss-module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProjectWorkPageRoutingModule
+    ProjectWorkPageRoutingModule,
+    ComponentssModule
   ],
   declarations: [ProjectWorkPage]
 })
