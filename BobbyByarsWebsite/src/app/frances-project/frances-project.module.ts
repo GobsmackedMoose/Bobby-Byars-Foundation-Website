@@ -8,13 +8,14 @@ import { FrancesProjectPageRoutingModule } from './frances-project-routing.modul
 
 import { FrancesProjectPage } from './frances-project.page';
 import { FooterComponent } from '../components/footer/footer.component';
-
+import { ComponentssModule } from '../componentss/componentss-module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     FrancesProjectPageRoutingModule,
+    ComponentssModule
     
   ],
   declarations: [FrancesProjectPage]
