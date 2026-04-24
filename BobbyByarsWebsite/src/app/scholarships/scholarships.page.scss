@@ -1,1 +1,95 @@
-// Styles for this page live in src/global.scss under "PROGRAM PAGE SHARED STYLES"
+// Shared program page styles live in src/global.scss under "PROGRAM PAGE SHARED STYLES"
+
+// ─── SCHOLARSHIPS SECTION ─────────────────────────────────────────────────────
+
+.scholarships-section {
+  padding: 64px 24px;
+  background: #fff;
+  align-items: flex-start;
+}
+
+.scholarships-heading-col {
+  margin-bottom: 40px;
+}
+
+.scholarships-rule {
+  width: 60px;
+  height: 3px;
+  background: var(--bbf-purple);
+  border-radius: 2px;
+  margin: 0 auto 24px;
+}
+
+.scholarships-heading {
+  color: var(--bbf-purple);
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.scholarships-subheading {
+  color: var(--bbf-charcoal);
+  font-size: 1rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+// ─── SCHOLARSHIP CARD ─────────────────────────────────────────────────────────
+
+.scholarship-card {
+  .scholarship-amount-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #1b6b3a;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+  }
+
+  .scholarship-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(113, 58, 175, 0.12);
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.88rem;
+    color: var(--bbf-charcoal);
+    line-height: 1.5;
+
+    ion-icon {
+      color: var(--bbf-purple);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+  }
+
+  .scholarship-description {
+    font-size: 0.92rem;
+    color: var(--bbf-charcoal);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+}
+
+// ─── RESPONSIVE ───────────────────────────────────────────────────────────────
+
+@media (max-width: 767px) {
+  .scholarships-section {
+    padding: 48px 12px;
+  }
+
+  .scholarships-heading {
+    font-size: 1.6rem;
+  }
+}
