@@ -20,8 +20,8 @@
 }
 
 .hero-section {
-  padding:    72px 24px;
-  background: linear-gradient(135deg, #1a0a2e 0%, #3b1a6b 60%, var(--bbf-purple) 100%);
+  padding:    80px 24px 72px;
+  background: linear-gradient(160deg, var(--bbf-purple) 0%, #3b1a6b 55%, #1e0a3c 100%);
 }
 
 .hero-text-col {
@@ -259,6 +259,16 @@ ion-text {
 
 // ─── GLOBAL BUTTON STYLES ─────────────────────────────────────────────────────
 
+ion-button.cta-gold {
+  --background:       var(--bbf-purple);
+  --background-hover: var(--bbf-accent);
+  --color:            #fff;
+  --border-radius:    50px;
+  --box-shadow:       0 4px 20px rgba(113, 58, 175, 0.4);
+  font-weight:        700;
+  letter-spacing:     0.05em;
+}
+
 ion-button {
   --background:       var(--bbf-purple);
   --background-hover: var(--bbf-gold-light);
@@ -384,4 +394,13 @@ ion-card-content {
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+/* @import "@ionic/angular/css/palettes/dark.system.css"; */
+
+// ─── HEADER OVERRIDES (must be after Ionic imports) ───────────────────────────
+
+ion-header::after,
+ion-header.header-md::after,
+ion-header.header-ios::after {
+  display: none !important;
+  box-shadow: none !important;
+}

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { FrancesProjectPageRoutingModule } from './frances-project-routing.module';
 
 import { FrancesProjectPage } from './frances-project.page';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FrancesProjectPageRoutingModule
+    FrancesProjectPageRoutingModule,
+    
   ],
   declarations: [FrancesProjectPage]
 })
