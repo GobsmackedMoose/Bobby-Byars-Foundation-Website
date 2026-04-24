@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { EventsPageRoutingModule } from './events-routing.module';
 
 import { EventsPage } from './events.page';
+import { FooterComponent } from '../components/footer/footer.component';
 //import { NewsArticlePage } from '../news-article/news-article.page';
 
 
@@ -15,7 +16,7 @@ import { EventsPage } from './events.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    EventsPageRoutingModule
+    EventsPageRoutingModule,
   ],
   declarations: [EventsPage]
 })

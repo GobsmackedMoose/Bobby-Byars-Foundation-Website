@@ -1,1 +1,17 @@
+.story-banner {
+  padding:    64px 24px 48px;
+  background: linear-gradient(160deg, var(--bbf-purple) 0%, #3b1a6b 55%, #1e0a3c 100%);
+}
 
+.story-banner-title {
+  color:       #fff;
+  font-size:   2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin:      10px 0 0;
+}
+
+@media (max-width: 767px) {
+  .story-banner       { padding: 36px 20px 28px; }
+  .story-banner-title { font-size: 1.6rem; }
+}
