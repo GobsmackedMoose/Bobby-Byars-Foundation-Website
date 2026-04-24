@@ -229,7 +229,7 @@ ion-header {
   font-weight:     700;
   line-height:     1.2;
   letter-spacing:  0.01em;
-  margin-bottom:   0.5rem;
+  margin-bottom:   0;
 
   &.section-subheading {
     font-size:    1.25rem;
@@ -404,3 +404,4 @@ ion-header.header-ios::after {
   display: none !important;
   box-shadow: none !important;
 }
+
