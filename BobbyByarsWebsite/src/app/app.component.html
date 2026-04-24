@@ -8,18 +8,20 @@
           </ion-col>
           <ion-col size = "1.5"> <ion-title> Bobby Byars  </ion-title> <ion-title> Foundation </ion-title></ion-col>
           <ion-col size="5.5" class="nav-col">
-            <ion-button class="menu-button" (click)="navigate('/story')">our story</ion-button>
-            <ion-button class="menu-button" (click)="openProgramsMenu($event)">programs</ion-button>
-            <ion-button class="menu-button" (click)="navigate('/events')">news/events</ion-button>
+            <ion-button class="cta-gold" (click)="navigate('/story')">our story</ion-button>
+            <ion-button class="cta-gold" (click)="openProgramsMenu($event)">programs</ion-button>
+            <ion-button class="cta-gold" (click)="navigate('/events')">news/events</ion-button>
           </ion-col>
           <ion-col size="4" class="action-col">
             <ion-searchbar class="donate-button"  placeholder="Search..." ></ion-searchbar>
-            <ion-button class="donate-button">donate</ion-button>
+            <ion-button class="cta-gold">donate</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-toolbar>
   </ion-header>
-  <ion-router-outlet></ion-router-outlet>
-  <ion-content> <ion-router-outlet></ion-router-outlet> </ion-content>
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+
 </ion-app>
